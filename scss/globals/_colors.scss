@@ -1,0 +1,27 @@
+:root {
+  // primary
+  //  (Full Slider Bar)
+  --primary-Soft-Cyan: hsl(174, 77%, 80%);
+  //  (Slider Backround)
+  --primary-Strong-Cyan: hsl(174, 86%, 45%);
+  // (Discount Background)
+  --primary-Light-Grayish-Red: hsl(14, 92%, 95%);
+  // (Discount Text)
+  --primary-Light-Red: hsl(15, 100%, 70%);
+  // (CTA Text)
+  --primary-Pale-Blue: hsl(226, 100%, 87%);
+
+  // neutral
+  // (Pricing Component Background)
+  --neutral-White: hsl (0, 0%, 100%);
+  // (Main Background)
+  --neutral-Very-Pale-Blue: hsl(230, 100%, 99%);
+  // (Empty Slider Bar)
+  --neutral-Light-Grayish-Blue: hsl(224, 65%, 95%);
+  //  (Toggle Background)
+  --neutral-Light-Grayish-Blue: hsl(223, 50%, 87%);
+  // (Text)
+  --neutral-Grayish-Blue: hsl(225, 20%, 60%);
+  // (Text & CTA Background)
+  --neutral-Dark-Desaturated-Blue: hsl(227, 35%, 25%);
+}

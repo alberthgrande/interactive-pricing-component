@@ -1,0 +1,21 @@
+body {
+  background: {
+    image: url(../images/bg-pattern.svg);
+    repeat: no-repeat;
+  }
+
+  margin-top: 40px;
+
+  // layout
+  display: grid;
+  place-content: center;
+}
+
+// footer
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
