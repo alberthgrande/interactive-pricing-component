@@ -43,12 +43,23 @@
             <p><span class="pricing__flex-price">$16.00</span> /month</p>
           </div>
 
-          <div></div>
+          <div class="pricing__range">
+            <input
+              type="range"
+              class="pricing__range-slider"
+              min="0"
+              max="32"
+              value="16"
+            />
+          </div>
 
           <div class="pricing__flex">
             <div class="pricing__flex-center">
               <p>Monthly Billing</p>
-
+              <label class="price__switch">
+                <input type="checkbox" />
+                <span class="pricing__slider-switch"></span>
+              </label>
               <p>
                 Yearly Billing
                 <span class="pricing__flex-discount">25% discount</span>
@@ -72,13 +83,6 @@
         </article>
       </div>
     </main>
-
-    <!-- <div>
-    <img src="./images/bg-pattern.svg" alt="">
-    <img src="./images/icon-check.svg" alt="">
-    <img src="./images/icon-slider.svg" alt="">
-    <img src="./images/pattern-circles.svg" alt="">
-  </div> -->
 
     <footer>
       <div class="attribution">
