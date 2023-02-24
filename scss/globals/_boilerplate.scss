@@ -3,12 +3,71 @@ body {
     image: url(../images/bg-pattern.svg);
     repeat: no-repeat;
   }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0.5rem;
 
-  margin-top: 40px;
+  // root
+  background-color: var(--neutral-Very-Pale-Blue);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
 
-  // layout
-  display: grid;
-  place-content: center;
+.container {
+  border-radius: 0.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  //center div
+  margin: auto;
+  max-width: 540px;
+
+  // root
+  background-color: var(--neutral-White);
+}
+
+// pricing
+.pricing {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem 2rem;
+
+    &-price {
+      font-size: 2.8rem;
+
+      // root
+      font-weight: var(--fw-800);
+      color: var(--neutral-Dark-Desaturated-Blue);
+    }
+  }
+
+  &__button {
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 170px;
+    outline-color: transparent;
+
+    // root
+    background-color: var(--neutral-Dark-Desaturated-Blue);
+    color: var(--neutral-Grayish-Blue);
+  }
+  &__button:hover {
+    color: var(--neutral-White);
+  }
+  &__button:active {
+    transform: scale(0.98);
+  }
 }
 
 // footer
