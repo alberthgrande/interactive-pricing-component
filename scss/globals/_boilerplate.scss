@@ -3,6 +3,7 @@ body {
     image: url(../images/bg-pattern.svg);
     repeat: no-repeat;
   }
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,8 +32,24 @@ body {
   display: flex;
   flex-direction: column;
 
+  // root
+  color: var(--neutral-Grayish-Blue);
+
   &__header {
     text-align: center;
+    margin: 5.625rem 0;
+
+    // root
+    color: var(--neutral-Grayish-Blue);
+    font-weight: var(--fw-600);
+
+    &-title {
+      font-size: 1.875rem;
+
+      // root
+      color: var(--neutral-Dark-Desaturated-Blue);
+      font-weight: var(--fw-800);
+    }
   }
 
   &__flex {
@@ -41,12 +58,44 @@ body {
     align-items: center;
     padding: 3rem 2rem 2rem;
 
+    &-views {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      // root
+      font-weight: var(--fw-800);
+    }
+
     &-price {
       font-size: 2.8rem;
 
       // root
       font-weight: var(--fw-800);
       color: var(--neutral-Dark-Desaturated-Blue);
+    }
+
+    &-content p::before {
+      content: url(../images/icon-check.svg);
+      margin-right: 1rem;
+    }
+
+    &-center {
+      display: flex;
+      margin: auto;
+
+      // root
+      font-weight: var(--fw-600);
+    }
+
+    &-discount {
+      // root
+      border-radius: 5rem;
+      font-size: 11px;
+      padding: 0.2rem 0.3rem;
+      text-align: center;
+
+      background-color: var(--primary-Light-Grayish-Red);
+      color: var(--primary-Light-Red);
     }
   }
 
@@ -63,7 +112,7 @@ body {
     color: var(--neutral-Grayish-Blue);
   }
   &__button:hover {
-    color: var(--neutral-White);
+    color: var(--primary-Pale-Blue);
   }
   &__button:active {
     transform: scale(0.98);
