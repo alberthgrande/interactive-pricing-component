@@ -24,9 +24,11 @@
         repeat: no-repeat;
         position: center;
       }
+      box-shadow: var(--primary-Strong-Cyan) 0px 7px 29px 0px;
+      border-radius: 50%;
+
       width: 20px;
       height: 20px;
-      border-radius: 50%;
       padding: 1.3rem;
     }
 

@@ -3,6 +3,9 @@
     margin: 10rem 0 0;
   }
   .pricing {
+    &__button {
+      margin-top: 2rem;
+    }
     &__flex {
       display: flex;
       flex-direction: column;

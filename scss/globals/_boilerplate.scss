@@ -23,6 +23,10 @@ header {
   }
 }
 
+hr {
+  border: 1px solid var(--primary-Strong-Cyan);
+}
+
 .container {
   border-radius: 0.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -82,28 +86,43 @@ header {
       color: var(--neutral-Dark-Desaturated-Blue);
     }
 
+    &-discount {
+      border-radius: 5rem;
+      font-size: 10px;
+      padding: 0.2rem 0.3rem;
+      text-align: center;
+
+      // root
+      background-color: var(--primary-Light-Grayish-Red);
+      color: var(--primary-Light-Red);
+    }
+
     &-content p::before {
       content: url(../images/icon-check.svg);
       margin-right: 1rem;
     }
+  }
 
-    &-center {
-      display: flex;
-      margin: auto;
+  &__flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem 2rem;
+    font-size: 12px;
 
-      // root
-      font-weight: var(--fw-600);
+    // root
+    color: var(--neutral-Grayish-Blue);
+  }
+
+  &__billing {
+    &-monthly {
+      position: relative;
+      right: 10px;
     }
 
-    &-discount {
-      // root
-      border-radius: 5rem;
-      font-size: 11px;
-      padding: 0.2rem 0.3rem;
-      text-align: center;
-
-      background-color: var(--primary-Light-Grayish-Red);
-      color: var(--primary-Light-Red);
+    &-yearly {
+      position: relative;
+      left: 10px;
     }
   }
 
@@ -111,7 +130,6 @@ header {
     border: none;
     border-radius: 5rem;
     cursor: pointer;
-    margin-top: 2rem;
     padding: 0.5rem;
     width: 170px;
     outline-color: transparent;
