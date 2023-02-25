@@ -111,6 +111,7 @@ header {
     border: none;
     border-radius: 5rem;
     cursor: pointer;
+    margin-top: 2rem;
     padding: 0.5rem;
     width: 170px;
     outline-color: transparent;
@@ -125,60 +126,13 @@ header {
   &__button:active {
     transform: scale(0.98);
   }
-
-  &__range {
-    padding: 0 2rem;
-
-    &-slider {
-      -webkit-appearance: none;
-
-      width: 100%;
-      height: 12px;
-      border-radius: 5px;
-      background: var(--primary-Soft-Cyan);
-
-      -webkit-transition: 0.3s all;
-      transition: opacity 0.2s;
-      cursor: pointer;
-    }
-
-    &-slider::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      background: {
-        color: var(--primary-Strong-Cyan);
-        image: url(../images/icon-slider.svg);
-        repeat: no-repeat;
-        position: center;
-      }
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      padding: 1.3rem;
-    }
-
-    &-slider::-moz-range-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      background: {
-        color: var(--primary-Strong-Cyan);
-        image: url(../images/icon-slider.svg);
-        repeat: no-repeat;
-        position: center;
-      }
-      border: none;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      padding: 0.5rem;
-    }
-  }
 }
 
 // footer
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 1rem 0;
   a {
     color: hsl(228, 45%, 44%);
   }
